@@ -2,6 +2,10 @@
 /* eslint-disable class-methods-use-this */
 const { LimitedArray, getIndexBelowMax } = require('./hash-table-helpers');
 
+// Refactor so that just the buckets are linked lists and not arrays
+// key value pairs can stay as arrays
+// You will still be using LimiitedArray class for the actual hash table
+
 class HashTable {
   constructor(limit = 8) {
     this.limit = limit;
