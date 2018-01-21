@@ -7,11 +7,15 @@
 ## Questions
 1. What are the order of insertions/removals for the following data structures?
    - **Stack**
+      Last in, first Out
    - **Queue**
+      First in, first out
 2. What is the retreival time complexity for the following data structures?
    - **Linked List**
+      
    - **Hash Table**
    - **Binary Search Trees**
+      O(log N)
 2. What are some advantages to using a Hash Tables over an array in JavaScript?
 
 ## Challenge

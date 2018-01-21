@@ -1,10 +1,13 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable class-methods-use-this */
-const { LimitedArray, getIndexBelowMax } = require('./hash-table-helpers');
+const { LimitedArray, getIndexBelowMax, LinkedList } = require('./hash-table-helpers');
 
 // Refactor so that just the buckets are linked lists and not arrays
 // key value pairs can stay as arrays
 // You will still be using LimiitedArray class for the actual hash table
+// You can use the linked-list file from Data Structures I
+// by creating a new file, copy paste the code, and import it to new file.
+// Make sure to add new classes in hash-table-helpers to 'module-exports'.
 
 class HashTable {
   constructor(limit = 8) {
