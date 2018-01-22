@@ -12,11 +12,13 @@
       First in, first out
 2. What is the retreival time complexity for the following data structures?
    - **Linked List**
-      
+      O(n); linear
    - **Hash Table**
+      0(1); constant
    - **Binary Search Trees**
-      O(log N)
+      O(log N); logarithmic
 2. What are some advantages to using a Hash Tables over an array in JavaScript?
+      The retrieval time does not increase regardless of the size of the array.
 
 ## Challenge
 If you take a look at the hash-table.js file you'll notice that it has solution code in it. You'll also notice that if you run the tests, they all pass. Your job is to refactor this hash table solution to use **linked lists** for buckets instead of arrays. You're welcome to add another class to the helper file, following the pattern used with LimitedArray.

@@ -59,11 +59,13 @@ class LinkedList {
   // Wraps the given value in a node object and adds the node to the tail of the list
   // If the list is empty, the new element is considered the tail as well as the head
   // If there is one element in the list before the new element is added, the new element becomes the tail of the list
-  addToTail(value) {
+  addToTail(key, value) {
     const newNode = {
       next: null,
       value,
     };
+
+    this.key = newNode;
 
     if (this.head === null) {
       this.head = newNode;
@@ -94,7 +96,7 @@ class LinkedList {
 
   // Checks the linked list for the given value
   // Returns true if the the value is found in the list, false otherwise
-  contains(value) {
+  contains(key, value) {
     let node = this.head;
     while (node !== null) {
       if (node.value === value) return true;
